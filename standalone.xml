@@ -1,0 +1,6 @@
+<socket-binding name="http" port="9090"/>
+
+<interface name="public">
+    <inet-address value="0.0.0.0"/>
+</interface>
+

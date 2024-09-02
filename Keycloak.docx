@@ -1,0 +1,9 @@
+Keycloak is an open source identity management solution. For environments/customers where it would be not possible to have a SAML auth process possible, Keycloak is a trusted solution which has worked for many corporates so far.
+
+For correct redirection, your backend/frontend, depending where you route your auth requests from, should correctly know that it needs to hit the keycloak URL. In response, keycloak has an option to set a correct response URL which it will redirect to once the authenticity is successful.
+It runs on 8443 port by default and is even compatible with microservices, such as in Kubernetes clusters.
+If you use a custom database for user storage yourself, then make sure the users you add are added to Keycloak as well as the user database. Else, keycloak returns a simple Json error of not authenticated.
+Since it depends on what protocol you want to follow in order to secure your application and how your application setup looks like, below is the link which you can follow based on your choice: 
+
+-- 
+
